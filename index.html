@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stranger Things Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img
+        class="logo"
+        src="./src/imgs/logo_strangers.png"
+        alt="Logo da série Stranger Things"
+      />
+      <audio
+        src="./src/audio/Audio_Abertura_StrangerThings.mp3"
+        controls="controls"
+        autoplay="autoplay"
+      ></audio>
+    </header>
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione o Persongem</h1>
+        <ul class="lista-de-personagens">
+          <li
+            class="personagem selecionado"
+            id="eleven"
+            data-name="Eleven"
+            data-descricao="Uma garota com habilidades psicocinéticas poderosas"
+          >
+            <img
+              src="./src/imgs/cards/Eleven.png"
+              alt="Imagem da personagem Eleven"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="mike"
+            data-name="Mike Wheeler"
+            data-descricao="O líder do grupo de amigos e interesse amoroso de Eleven"
+          >
+            <img
+              src="./src/imgs/cards/Mike.png"
+              alt="Imagem da personagem Mike"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="will"
+            data-name="Will Byers"
+            data-descricao="O garoto que foi perdido no Mundo Invertido na primeira temporada e ainda enfrenta traumas relacionados a isso."
+          >
+            <img
+              src="./src/imgs/cards/Will.png"
+              alt="Imagem da personagem Will"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="max"
+            data-name="Max Mayfield"
+            data-descricao="Uma nova moradora de Hawkins e membro do grupo de amigos, com habilidades de patinação."
+          >
+            <img
+              src="./src/imgs/cards/Max.png"
+              alt="Imagem da personagem Max"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="lucas"
+            data-name="Lucas Sinclair"
+            data-descricao="Um amigo de Mike e Dustin, conhecido por sua perspicácia e habilidades de caça."
+          >
+            <img
+              src="./src/imgs/cards/Lucas.png"
+              alt="Imagem da personagem Lucas"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="dustin"
+            data-name="Dustin Henderson"
+            data-descricao="Um membro do grupo de amigos que é inteligente e engraçado."
+          >
+            <img
+              src="./src/imgs/cards/Dustin.png"
+              alt="Imagem da personagem Dustin"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="nancy"
+            data-name="Nancy Wheeler"
+            data-descricao="A irmã mais velha de Mike, uma jovem inteligente e destemida."
+          >
+            <img
+              src="./src/imgs/cards/Nancy.png"
+              alt="Imagem da personagem Nancy"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="jonathan"
+            data-name="Jonathan Byers"
+            data-descricao="O irmão mais velho de Will, um fotógrafo dedicado e leal."
+          >
+            <img
+              src="./src/imgs/cards/Jonathan.png"
+              alt="Imagem da personagem Jonathan"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="robin"
+            data-name="Robin Buckley"
+            data-descricao="Uma colega de trabalho de Steve, uma pessoa inteligente e sarcástica."
+          >
+            <img
+              src="./src/imgs/cards/Robin.png"
+              alt="Imagem da personagem Robin"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="steve"
+            data-name="Steve Harrington"
+            data-descricao="Um ex-popular do ensino médio que se torna um aliado valioso."
+          >
+            <img
+              src="./src/imgs/cards/Steve.png"
+              alt="Imagem da personagem Steve"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="joyce"
+            data-name="Joyce Byers"
+            data-descricao="A mãe de Will, uma mulher forte e determinada a proteger seus filhos."
+          >
+            <img
+              src="./src/imgs/cards/Joyce.png"
+              alt="Imagem da personagem Joyce"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="hopper"
+            data-name="Jim Hopper"
+            data-descricao="O chefe de polícia de Hawkins, conhecido por seu estilo rústico e protetor."
+          >
+            <img
+              src="./src/imgs/cards/Hopper.png"
+              alt="Imagem da personagem Hopper"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imgs/inteiro/eleven.png"
+          alt="Card personagem Eleven"
+        />
+        <h2 class="nome-personagem" id="nome-personagem">Eleven</h2>
+        <p class="descricao-personagem" id="descricao-personagem">
+          Uma garota com habilidades psicocinéticas poderosas
+        </p>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

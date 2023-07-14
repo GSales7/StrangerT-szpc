@@ -1,0 +1,101 @@
+body {
+  font-family: Oxanium;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body::before {
+  content: "";
+  background-image: url("../imgs/fundo1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.cabecalho {
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 450px;
+  display: flex;
+  justify-content: left;
+}
+
+.cabecalho .logo {
+  width: 450px;
+}
+
+.selecao-de-personagens {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  min-height: calc(100vh - 150);
+  justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 560px;
+  gap: 10px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+  color: rgba(175, 31, 30, 0.7);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 15px 3px #4d4343;
+  border-radius: 5px;
+}
+
+.selecao-de-personagens .personagens .lista-de-personagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 20px; /* O 5px é o espaçamento na altura e o 20px na largura */
+  justify-content: center;
+}
+
+.lista-de-personagens .personagem img {
+  width: 120px;
+  height: 120px;
+}
+
+/* A parte que cria a borda de seleção */
+.lista-de-personagens .personagem.selecionado {
+  box-shadow: 0px 0px 20px 5px #af1f1e;
+}
+
+.personagem-selecionado {
+  text-align: center;
+  min-width: 450px;
+}
+
+.personagem-selecionado img {
+  width: 350px;
+  height: 400px;
+}
+
+.personagem-selecionado .nome-personagem {
+  border-bottom: 2px solid #af1f1e;
+  box-shadow: 0px 0px 10px 2px #4d4343;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.personagem-selecionado .descricao-personagem {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+  width: 420px;
+}
